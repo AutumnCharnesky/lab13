@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel=stylesheet type='text/css' href='style.css'></link>
+    <title></title>
+  </head>
+  <body ng-app="kiddo" ng-controller="adult">
+
+    <button type="buttom" ng-click="addWord()">Words</button>
+    <button type="buttom" ng-click="addStyle()">Style</button>
+    <button type="buttom" ng-click="addPhrase()">Prases</button>
+    <button type="buttom" ng-click="addStyle2()">Styled Phrases</button>
+
+    <span ng-class="word.cls" ng-repeat="word in words">{{word.text}}</span>
+
+    <script src="lib/angular.min.js"></script>
+    <script src="script.js"></script>
+
+  </body>
+</html>
